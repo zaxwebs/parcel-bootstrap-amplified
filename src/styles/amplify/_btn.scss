@@ -1,0 +1,61 @@
+@each $name, $color in $gradient-colors {
+	.btn-gradient-#{$name} {
+		$first: nth($color, 1);
+		$second: nth($color, 2);
+
+		background-color: $first;
+		border-color: darken($first, 5%);
+		background: linear-gradient($gradient-angle, $first, $second);
+		color: $white;
+		@include transition(
+			background-color 0.15s ease-in-out,
+			background 0.15s ease-in-out
+		);
+
+		&:hover {
+			color: $white;
+			border-color: darken($first, 20%);
+			background: linear-gradient(
+				$gradient-angle,
+				darken($first, 5%),
+				darken($second, 5%)
+			);
+		}
+
+		&:focus {
+			// Avoid using mixin so we can pass custom focus shadow properly
+			@if $enable-shadows {
+				box-shadow: $btn-box-shadow,
+					0
+						0
+						0
+						$btn-focus-width
+						rgba(mix($first, darken($first, 20%), 15%), 0.4);
+			} @else {
+				box-shadow: 0
+					0
+					0
+					$btn-focus-width
+					rgba(mix($first, darken($first, 20%), 15%), 0.4);
+			}
+		}
+
+		&:focus {
+			// Avoid using mixin so we can pass custom focus shadow properly
+			@if $enable-shadows and $btn-active-box-shadow != none {
+				box-shadow: $btn-active-box-shadow,
+					0
+						0
+						0
+						$btn-focus-width
+						rgba(mix($first, darken($first, 20%), 15%), 0.4);
+			} @else {
+				box-shadow: 0
+					0
+					0
+					$btn-focus-width
+					rgba(mix($first, darken($first, 20%), 15%), 0.4);
+			}
+		}
+	}
+}
