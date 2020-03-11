@@ -1,0 +1,10 @@
+@each $name, $color in $gradient-colors {
+	.bg-gradient-#{$name} {
+		$first: nth($color, 1);
+		$second: nth($color, 2);
+
+		color: $white;
+		background-color: $first;
+		background-image: linear-gradient($gradient-angle, $first, $second);
+	}
+}

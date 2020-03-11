@@ -14,7 +14,7 @@
 
 		&:hover {
 			color: $white;
-			border-color: darken($first, 20%);
+			border-color: darken($first, 10%);
 			background: linear-gradient(
 				$gradient-angle,
 				darken($first, 5%),
@@ -30,13 +30,13 @@
 						0
 						0
 						$btn-focus-width
-						rgba(mix($first, darken($first, 20%), 15%), 0.4);
+						rgba(mix($first, darken($first, 10%), 15%), 0.4);
 			} @else {
 				box-shadow: 0
 					0
 					0
 					$btn-focus-width
-					rgba(mix($first, darken($first, 20%), 15%), 0.4);
+					rgba(mix($first, darken($first, 10%), 15%), 0.4);
 			}
 		}
 
@@ -48,13 +48,13 @@
 						0
 						0
 						$btn-focus-width
-						rgba(mix($first, darken($first, 20%), 15%), 0.4);
+						rgba(mix($first, darken($first, 10%), 15%), 0.4);
 			} @else {
 				box-shadow: 0
 					0
 					0
 					$btn-focus-width
-					rgba(mix($first, darken($first, 20%), 15%), 0.4);
+					rgba(mix($first, darken($first, 10%), 15%), 0.4);
 			}
 		}
 	}
