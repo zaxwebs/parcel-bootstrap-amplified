@@ -1,5 +1,7 @@
-# Parcel Bootstrap Starter
+# Parcel Bootstrap Amplified - Starter
 Starter setup for [Parcel.js](https://parceljs.org/) with Bootstrap (SASS).
+A SASS utility-based extension of Bootstrap 4 for [PBS](https://github.com/zaxwebs/parcel-bootstrap-starter).
+It expands Bootstrap 4's utilities, components & functionality.
 
 This starter offers a quick modular setup of directories/structure and dependencies for getting started with your project while utilzing Parcel.js.
 
