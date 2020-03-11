@@ -8,21 +8,47 @@
 		<link rel="stylesheet" href="./styles/main.scss" />
 		<title>App</title>
 	</head>
-	<body>
-		<div class="container p-4">
-			<h2>Rows</h2>
-			<h3>Alternating Rows</h3>
-			<h4>.rows-md-alternate</h4>
+	<body class="p-4">
+		<h2>Rows</h2>
+		<h3>Alternating Rows</h3>
+		<h4>.rows-md-alternate</h4>
+		<div class="container">
 			<div class="rows-md-alternate">
 				<div class="row">
-					<div class="col">1</div>
-					<div class="col">2</div>
+					<div class="col bg-light">1</div>
+					<div class="col bg-primary">2</div>
 				</div>
 				<div class="row">
-					<div class="col">1</div>
-					<div class="col">2</div>
+					<div class="col bg-light">1</div>
+					<div class="col bg-primary">2</div>
 				</div>
 			</div>
+		</div>
+
+		<h3>Row with Side Content</h3>
+		<div class="row row-split">
+			<div class="col-md-6">1</div>
+			<div class="col-md-6 right">
+				<div class="bg-success wrapper">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet
+					facilisis nibh. Cras bibendum venenatis urna elementum hendrerit.
+					Praesent ligula urna, aliquet a massa at, faucibus iaculis elit. Etiam
+					eget nunc cursus, convallis purus fermentum, fermentum mauris. Nullam
+					rhoncus magna et turpis iaculis, facilisis ultrices augue consequat.
+				</div>
+			</div>
+		</div>
+		<div class="row row-split">
+			<div class="col-md-6 left">
+				<div class="bg-success wrapper">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet
+					facilisis nibh. Cras bibendum venenatis urna elementum hendrerit.
+					Praesent ligula urna, aliquet a massa at, faucibus iaculis elit. Etiam
+					eget nunc cursus, convallis purus fermentum, fermentum mauris. Nullam
+					rhoncus magna et turpis iaculis, facilisis ultrices augue consequat.
+				</div>
+			</div>
+			<div class="col-md-6">1</div>
 		</div>
 		<script src="./scripts/main.js"></script>
 	</body>
