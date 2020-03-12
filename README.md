@@ -2,7 +2,7 @@
 Starter setup for [Parcel.js](https://parceljs.org/) with Bootstrap (SASS).
 A SASS utility-based extension of Bootstrap 4 for [PBS](https://github.com/zaxwebs/parcel-bootstrap-starter).
 
-It expands Bootstrap 4's utilities, components & functionality.
+Bootstrap Amplified expands Bootstrap 4's utilities, components & functionality.
 
 This starter offers a quick modular setup of directories/structure and dependencies for getting started with your project while utilzing Parcel.js.
 
@@ -13,6 +13,12 @@ This starter offers a quick modular setup of directories/structure and dependenc
 4. Run `npm install` to install dependencies.
 5. ...
 6. Profit?
+
+# To-Dos
+* Add whitespacing to docs for visual separation.
+* Refactor .col-contained.
+* Add support for more colors in a gradient palette.
+* Branch 'Bootstrap Amplified' into it's own project.
 
 # Commands
 * `npm install` - Install dependencies.
