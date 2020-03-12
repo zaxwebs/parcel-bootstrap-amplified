@@ -1,0 +1,16 @@
+// Deep map-get()
+@function map-fetch($map, $keys...) {
+	@each $key in $keys {
+		$map: map-get($map, $key);
+	}
+	@return $map;
+}
+
+// Darkens a color list
+@function darken-list($colors, $percent) {
+	$darkened: ();
+	@each $color in $colors {
+		$darkened: append($darkened, darken($color, $percent), 'comma');
+	}
+	@return $darkened;
+}

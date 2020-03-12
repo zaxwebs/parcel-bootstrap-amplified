@@ -1,31 +1,21 @@
-$gradient-colors: (
-	'sunrise': (
-		#ff512f,
-		#dd2476
+// Gradients
+
+$gradients: (
+	'a': (
+		#ff8800,
+		#ee0979
 	),
-	'blue': (
-		#1488cc,
-		#2b32b2
+	'b': (
+		#0be060,
+		#185a9d
 	),
-	'gold': (
-		#ffd500,
-		#dd7a16
+	'c': (
+		#00c6fb,
+		#005bea
 	),
-	'midnight': (
-		#8e2de2,
-		#4a00e0
-	),
-	'flare': (
-		#f12711,
-		#f5af19
-	),
-	'sunset': (
-		#ff416c,
-		#ff4b2b
-	),
-	'messenger': (
-		#00c6ff,
-		#0072ff
+	'd': (
+		#2af598,
+		#009efd
 	)
 );
 

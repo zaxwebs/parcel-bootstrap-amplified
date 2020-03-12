@@ -1,0 +1,26 @@
+@each $breakpoint in map-keys($container-max-widths) {
+	$infix: breakpoint-infix($breakpoint, $container-max-widths);
+	.col#{$infix}-6.col-contained,
+	.col#{$infix}-6.col-contained-left,
+	.col#{$infix}-6.col-contained-right {
+		@include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+			padding: 0;
+			.content {
+				padding-right: $grid-gutter-width / 2;
+				padding-left: $grid-gutter-width / 2;
+				@each $breakpoint in map-keys($container-max-widths) {
+					@include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+						$container-max-width: map-get($container-max-widths, $breakpoint);
+						max-width: $container-max-width/2;
+					}
+				}
+			}
+		}
+	}
+
+	.col#{$infix}-6.col-contained-left {
+		.content {
+			float: right;
+		}
+	}
+}
