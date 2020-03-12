@@ -1,0 +1,8 @@
+@each $name, $gradient in $gradients {
+	.text-gradient-#{$name} {
+		background-image: linear-gradient($gradient-angle, $gradient...);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
