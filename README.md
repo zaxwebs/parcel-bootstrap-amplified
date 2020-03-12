@@ -14,6 +14,12 @@ This starter offers a quick modular setup of directories/structure and dependenc
 5. ...
 6. Profit?
 
+# To-Dos
+* Add whitespacing to docs for visual separation.
+* Refactor .col-contained.
+* Add support for more colors in a gradient palette.
+* Branch 'Bootstrap Amplified' into it's own project.
+
 # Commands
 * `npm install` - Install dependencies.
 * `npm start` - Run Parcel.
