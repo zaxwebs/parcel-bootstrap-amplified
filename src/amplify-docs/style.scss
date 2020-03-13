@@ -1,20 +1,21 @@
+@import '../styles/main.scss';
+
 section {
-	padding-top: 3rem;
-	padding-bottom: 3rem;
+	@extend .py-5;
 }
 
 .info {
-	padding-top: 1rem;
+	@extend .pt-3;
 	p {
-		color: #868e96;
+		color: $gray-600;
 	}
 }
 
 .flex-demo-wrapper {
+	@extend .p-3;
 	min-height: 200px;
 	background: #bac8ff;
 	border: 1px solid #91a7ff;
-	padding: 1rem;
 
 	.flex-demo {
 		color: #6741d9;
