@@ -1,10 +1,8 @@
 // Mixins
-@mixin bg-image($path: false, $size: cover, $position: center center) {
+@mixin bg-image($path: false) {
 	@if $path {
 		background-image: url($path);
 	}
-	background-size: $size;
-	background-position: $position;
 }
 
 // Implementations
@@ -19,5 +17,17 @@
 }
 
 .bg-cover {
-	@include bg-image();
+	background-size: cover;
+}
+
+.bg-fixed {
+	background-attachment: fixed;
+}
+
+.bg-center {
+	background-position: center center;
+}
+
+.bg-hero {
+	@extend .bg-cover, .bg-fixed, .bg-center;
 }

@@ -11,9 +11,9 @@
 	<body>
 		<section>
 			<div class="container">
-				<h1>Gradients</h1>
-				<h6>{component}-gradient-{variant}</h6>
+				<h1>Backgrounds</h1>
 				<h2>Gradient Backgrounds</h2>
+				<h6>.bg-gradient-{variant}</h6>
 				<div class="row">
 					<div class="col-md-4">
 						<div class="bg-gradient-a rounded p-2 pb-5 mb-3">
@@ -43,6 +43,60 @@
 						</div>
 					</div>
 				</div>
+				<h2>Background Cover Image</h2>
+				<h6>.bg-cover</h6>
+				<div class="row">
+					<div class="col-md-6 mb-3">
+						<div class="bg-cover bg-cover-demo rounded"></div>
+					</div>
+					<div class="col-md-6 mb-3">
+						<h6>.bg-fixed</h6>
+						<h6>.bg-center</h6>
+						<h6>.bg-hero</h6>
+						<div class="info">
+							<p>
+								Extends .bg-cover, .bg-fixed and .bg-center. Meant for
+								full-width hero section covers.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<h1>Text</h1>
+				<h2>Gradient Text</h2>
+				<h6>.text-gradient-{variant}</h6>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="mb-3">
+							<h6>.text-gradient-a</h6>
+							<h4 class="text-gradient-a d-inline-block">Gradient Text</h4>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="mb-3">
+							<h6>.text-gradient-b</h6>
+							<h4 class="text-gradient-b d-inline-block">Gradient Text</h4>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="mb-3">
+							<h6>.text-gradient-c</h6>
+							<h4 class="text-gradient-c d-inline-block">Gradient Text</h4>
+						</div>
+					</div>
+				</div>
+				<div class="alert alert-info">
+					.text-gradient-{variant} overrides background-image. It is recommend
+					to nest such text in it's own container.
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<h1>Buttons</h1>
 				<h2>Gradient Buttons</h2>
 				<div class="row">
 					<div class="col-md-3">
@@ -92,32 +146,6 @@
 							</button>
 						</div>
 					</div>
-				</div>
-				<h2>Gradient Text</h2>
-				<h6>.text-gradient-{variant}</h6>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="mb-3">
-							<h6>.text-gradient-a</h6>
-							<h4 class="text-gradient-a d-inline-block">Gradient Text</h4>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="mb-3">
-							<h6>.text-gradient-b</h6>
-							<h4 class="text-gradient-b d-inline-block">Gradient Text</h4>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="mb-3">
-							<h6>.text-gradient-c</h6>
-							<h4 class="text-gradient-c d-inline-block">Gradient Text</h4>
-						</div>
-					</div>
-				</div>
-				<div class="alert alert-info">
-					.text-gradient-{variant} overrides background-image. It is recommend
-					to nest such text in it's own container.
 				</div>
 			</div>
 		</section>

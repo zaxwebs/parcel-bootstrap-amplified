@@ -5,7 +5,7 @@ section {
 }
 
 .info {
-	@extend .pt-3;
+	@extend .pt-1;
 	p {
 		color: $gray-600;
 	}
@@ -24,4 +24,13 @@ section {
 		max-width: 100px;
 		max-height: 100px;
 	}
+}
+
+.bg-demo {
+	min-height: 250px;
+}
+
+.bg-cover-demo {
+	@extend .bg-demo;
+	background-image: url('./images/cover.jpg');
 }
