@@ -10,6 +10,17 @@ section {
 	}
 }
 
-.col {
-	margin-bottom: 1rem;
+.flex-demo-wrapper {
+	min-height: 200px;
+	background: #bac8ff;
+	border: 1px solid #91a7ff;
+	padding: 1rem;
+
+	.flex-demo {
+		color: #6741d9;
+		border: 1px solid #6741d9;
+		background: #d0bfff;
+		max-width: 100px;
+		max-height: 100px;
+	}
 }

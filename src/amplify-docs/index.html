@@ -16,8 +16,8 @@
 				<h6>{component}-gradient-{variant}</h6>
 				<h2>Gradient Backgrounds</h2>
 				<div class="row">
-					<div class="col col-md-4">
-						<div class="bg-gradient-a rounded p-2 pb-5">
+					<div class="col-md-4">
+						<div class="bg-gradient-a rounded p-2 pb-5 mb-3">
 							<h6>.bg-gradient-a</h6>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
@@ -26,7 +26,7 @@
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="bg-gradient-b rounded p-2 pb-5">
+						<div class="bg-gradient-b rounded p-2 pb-5 mb-3">
 							<h6>.bg-gradient-b</h6>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
@@ -35,7 +35,7 @@
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="bg-gradient-c rounded p-2 pb-5">
+						<div class="bg-gradient-c rounded p-2 pb-5 mb-3">
 							<h6>.bg-gradient-c</h6>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
@@ -46,20 +46,20 @@
 				</div>
 				<h2>Gradient Buttons</h2>
 				<div class="row">
-					<div class="col col-md-4">
-						<div>
+					<div class="col-md-3">
+						<div class="mb-3">
 							<h6>.btn-gradient-a</h6>
 							<button class="btn btn-gradient-a">Gradient Button</button>
 						</div>
 					</div>
-					<div class="col col-md-4">
-						<div>
+					<div class="col-md-3">
+						<div class="mb-3">
 							<h6>.btn-gradient-b</h6>
 							<button class="btn btn-gradient-b">Gradient Button</button>
 						</div>
 					</div>
-					<div class="col col-md-4">
-						<div>
+					<div class="col-md-3">
+						<div class="mb-3">
 							<h6>.btn-gradient-b</h6>
 							<button class="btn btn-gradient-c">Gradient Button</button>
 						</div>
@@ -67,26 +67,26 @@
 				</div>
 				<h3>Gradient Button States</h3>
 				<div class="row">
-					<div class="col col-md-3">
-						<div>
+					<div class="col-md-3">
+						<div class="mb-3">
 							<h6>Normal & Hover</h6>
 							<button class="btn btn-gradient-c">Gradient Button</button>
 						</div>
 					</div>
-					<div class="col col-md-3">
-						<div>
+					<div class="col-md-3">
+						<div class="mb-3">
 							<h6>Focus <span class="text-secondary">.focus</span></h6>
 							<button class="btn btn-gradient-c focus">Gradient Button</button>
 						</div>
 					</div>
-					<div class="col col-md-3">
-						<div>
+					<div class="col-md-3">
+						<div class="mb-3">
 							<h6>Active <span class="text-secondary">.active</span></h6>
 							<button class="btn btn-gradient-c active">Gradient Button</button>
 						</div>
 					</div>
-					<div class="col col-md-3">
-						<div>
+					<div class="col-md-3">
+						<div class="mb-3">
 							<h6>Disabled <span class="text-secondary">.disabled</span></h6>
 							<button class="btn btn-gradient-c disabled" disabled>
 								Gradient Button
@@ -97,20 +97,20 @@
 				<h2>Gradient Text</h2>
 				<h6>.text-gradient-{variant}</h6>
 				<div class="row">
-					<div class="col col-md-4">
-						<div>
+					<div class="col-md-4">
+						<div class="mb-3">
 							<h6>.text-gradient-a</h6>
 							<h4 class="text-gradient-a d-inline-block">Gradient Text</h4>
 						</div>
 					</div>
-					<div class="col col-md-4">
-						<div>
+					<div class="col-md-4">
+						<div class="mb-3">
 							<h6>.text-gradient-b</h6>
 							<h4 class="text-gradient-b d-inline-block">Gradient Text</h4>
 						</div>
 					</div>
-					<div class="col col-md-4">
-						<div>
+					<div class="col-md-4">
+						<div class="mb-3">
 							<h6>.text-gradient-c</h6>
 							<h4 class="text-gradient-c d-inline-block">Gradient Text</h4>
 						</div>
@@ -119,6 +119,61 @@
 				<div class="alert alert-info">
 					.text-gradient-{variant} overrides background-image. It is recommend
 					to nest such text in it's own container.
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<h1>Flex</h1>
+				<div class="row">
+					<div class="col-md-6 p-1 mb-3">
+						<h6>.flex-x</h6>
+						<div class="flex-demo-wrapper flex-x">
+							<div class="flex-demo p-1">
+								Lorem ipsum dolor sit amet.
+							</div>
+						</div>
+						<div class="info">
+							<p>Center inner wrapper horizontally.</p>
+						</div>
+					</div>
+					<div class="col-md-6 p-1 mb-3">
+						<h6>.flex-y</h6>
+						<div class="flex-demo-wrapper flex-y">
+							<div class="flex-demo p-1">
+								Lorem ipsum dolor sit amet.
+							</div>
+						</div>
+						<div class="info">
+							<p>Center inner wrapper vertically.</p>
+						</div>
+					</div>
+					<div class="col-md-6 p-1 mb-3">
+						<h6>.flex-xy</h6>
+						<div class="flex-demo-wrapper flex-xy">
+							<div class="flex-demo p-1">
+								Lorem ipsum dolor sit amet.
+							</div>
+						</div>
+						<div class="info">
+							<p>
+								Center inner wrapper horizontal & vertically.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-6 p-1 mb-3">
+						<h6>.flex-center</h6>
+						<div class="flex-demo-wrapper flex-center">
+							<div class="flex-demo p-1">
+								Lorem ipsum dolor sit amet.
+							</div>
+						</div>
+						<div class="info">
+							<p>
+								Center text & inner wrapper horizontal & vertically.
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>

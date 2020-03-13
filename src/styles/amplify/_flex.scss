@@ -1,0 +1,22 @@
+.flex-x {
+	display: flex;
+	justify-content: center;
+}
+
+.flex-y {
+	display: flex;
+	align-items: center;
+}
+
+.flex-xy {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
