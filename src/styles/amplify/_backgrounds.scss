@@ -1,3 +1,14 @@
+// Mixins
+@mixin bg-image($path: false, $size: cover, $position: center center) {
+	@if $path {
+		background-image: url($path);
+	}
+	background-size: $size;
+	background-position: $position;
+}
+
+// Implementations
+
 @each $name, $gradient in $gradients {
 	.bg-gradient-#{$name} {
 		$background: mix($gradient...);
@@ -5,4 +16,8 @@
 		color: color-yiq($background);
 		background-image: linear-gradient($gradient-angle, $gradient...);
 	}
+}
+
+.bg-cover {
+	@include bg-image();
 }
