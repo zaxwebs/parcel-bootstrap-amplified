@@ -18,6 +18,7 @@ This starter offers a quick modular setup of directories/structure and dependenc
 * Add whitespacing to docs for visual separation.
 * Refactor .col-contained.
 * Add support for more colors in a gradient palette.
+* Reduce markup reliance.
 * Branch 'Bootstrap Amplified' into it's own project.
 
 # Commands
