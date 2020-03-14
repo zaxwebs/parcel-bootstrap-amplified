@@ -1,0 +1,12 @@
+.link-wrapper {
+	&,
+	&:link,
+	&:visited,
+	&:hover,
+	&:active,
+	&:focus,
+	&:active:hover {
+		color: inherit;
+		text-decoration: inherit;
+	}
+}
